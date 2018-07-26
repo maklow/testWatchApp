@@ -16,35 +16,39 @@
                     <items>
                         <group width="136" height="64" alignment="left" id="8Ig-ge-3LA">
                             <items>
-                                <button width="0.5" height="59" alignment="left" backgroundImage="try again" id="vYk-73-Vtq"/>
-                                <button width="0.5" height="69" alignment="left" backgroundImage="unlock" id="3jX-H5-Zkf"/>
+                                <button width="66" height="67" alignment="left" backgroundImage="unlock" id="vYk-73-Vtq"/>
+                                <button width="0.5" height="69" alignment="left" backgroundImage="lock" id="3jX-H5-Zkf"/>
                             </items>
                         </group>
-                        <button width="1" alignment="left" title="Locate" id="cYc-Ri-B3j"/>
-                        <button width="1" alignment="left" title="Secure" id="mAS-FC-PMn"/>
-                        <button width="1" alignment="left" title="My Climate" id="8P8-F4-JUo"/>
-                        <button width="1" alignment="left" title="My Radio" id="Jp5-JS-3OB"/>
+                        <button width="1" alignment="left" backgroundImage="locate" id="cYc-Ri-B3j"/>
+                        <button width="1" alignment="left" backgroundImage="secure" id="mAS-FC-PMn"/>
+                        <button width="1" alignment="left" backgroundImage="myClimate" id="8P8-F4-JUo"/>
+                        <button width="1" alignment="left" backgroundImage="myRadio" id="Jp5-JS-3OB"/>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="914" y="-697.5"/>
+            <point key="canvasLocation" x="914" y="-731"/>
         </scene>
         <!--Driver Climate-->
         <scene sceneID="ZfN-Ah-sSo">
             <objects>
                 <controller title="Driver Climate" id="DNk-lU-lMC">
                     <items>
-                        <label alignment="left" text="Driver" id="Y11-b9-MtS"/>
+                        <label alignment="left" text="Driver" id="Y11-b9-MtS">
+                            <fontDescription key="font" type="system" pointSize="33"/>
+                        </label>
                         <group width="134" height="62" alignment="left" id="40l-ij-Ma9">
                             <items>
-                                <button alignment="left" backgroundImage="minus" id="lzv-ra-pme"/>
-                                <label width="52" height="62" alignment="left" text="76 F" textAlignment="center" id="CXz-vx-vRO">
-                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                <button width="32" height="34" alignment="left" verticalAlignment="center" backgroundImage="minus" id="lzv-ra-pme"/>
+                                <label alignment="left" text="76º" textAlignment="center" id="CXz-vx-vRO">
+                                    <fontDescription key="font" type="system" pointSize="48"/>
                                 </label>
-                                <button width="38" height="39" alignment="left" backgroundImage="plus" id="afK-mb-y2s"/>
+                                <button width="33" height="34" alignment="left" verticalAlignment="center" backgroundImage="plus" id="afK-mb-y2s"/>
                             </items>
                         </group>
-                        <button width="1" alignment="left" title="Set" id="Rkf-SL-UYq"/>
+                        <button width="1" alignment="left" title="Set" id="Rkf-SL-UYq">
+                            <color key="backgroundColor" red="0.0078431372549019607" green="0.46274509803921571" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
                     </items>
                     <connections>
                         <segue destination="bwn-RQ-7Du" kind="relationship" relationship="nextPage" id="qSb-AR-u1K"/>
@@ -60,7 +64,9 @@
                     <items>
                         <picker height="63" alignment="left" id="FXy-g7-VGl"/>
                         <picker height="53" alignment="left" id="w3o-X2-8Wy"/>
-                        <button width="1" alignment="left" title="Set" id="VpK-zm-KO2"/>
+                        <button width="1" alignment="left" title="Set" id="VpK-zm-KO2">
+                            <color key="backgroundColor" red="0.0078431372550000003" green="0.46274509800000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
                     </items>
                 </controller>
             </objects>
@@ -94,24 +100,28 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1659" y="-5"/>
+            <point key="canvasLocation" x="1644" y="-10"/>
         </scene>
         <!--Passenger Climate-->
         <scene sceneID="xIB-5y-xS4">
             <objects>
                 <controller title="Passenger Climate" id="bwn-RQ-7Du">
                     <items>
-                        <label alignment="left" text="Front-Seat Passenger" id="w0a-GA-voA"/>
-                        <group width="134" height="62" alignment="left" id="KS5-oH-CX6">
+                        <label alignment="left" text="Front-Seat Passenger" id="w0a-GA-voA">
+                            <fontDescription key="font" type="system" pointSize="24"/>
+                        </label>
+                        <group width="134" height="62" alignment="left" id="EG3-hg-uBC">
                             <items>
-                                <button alignment="left" backgroundImage="minus" id="geA-EZ-OCk"/>
-                                <label width="52" height="62" alignment="left" text="76 F" textAlignment="center" id="cYE-QS-Nsr">
-                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                <button width="32" height="34" alignment="left" verticalAlignment="center" backgroundImage="minus" id="6OU-ce-DXd"/>
+                                <label alignment="left" text="76º" textAlignment="center" id="LuQ-wr-AB9">
+                                    <fontDescription key="font" type="system" pointSize="48"/>
                                 </label>
-                                <button width="38" height="39" alignment="left" backgroundImage="plus" id="Llx-iI-nC2"/>
+                                <button width="33" height="34" alignment="left" verticalAlignment="center" backgroundImage="plus" id="MTB-BZ-vn4"/>
                             </items>
                         </group>
-                        <button width="1" alignment="left" title="Set" id="azW-tw-t9k"/>
+                        <button width="1" alignment="left" title="Set" id="azW-tw-t9k">
+                            <color key="backgroundColor" red="0.0078431372550000003" green="0.46274509800000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
                     </items>
                 </controller>
             </objects>

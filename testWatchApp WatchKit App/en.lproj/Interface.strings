@@ -1,0 +1,87 @@
+
+/* Class = "WKInterfaceButton"; title = "Clear"; ObjectID = "2CC-Bj-9Ci"; */
+"2CC-Bj-9Ci.title" = "Clear";
+
+/* Class = "WKInterfaceButton"; title = "Dad"; ObjectID = "3u0-ms-X88"; */
+"3u0-ms-X88.title" = "Dad";
+
+/* Class = "WKInterfaceLabel"; text = "10:24 ETA"; ObjectID = "4MA-ZG-nS7"; */
+"4MA-ZG-nS7.text" = "10:24 ETA";
+
+/* Class = "WKInterfaceButton"; title = "My Climate"; ObjectID = "8P8-F4-JUo"; */
+"8P8-F4-JUo.title" = "My Climate";
+
+/* Class = "WKInterfaceController"; title = "Homepage"; ObjectID = "AgC-eL-Hgc"; */
+"AgC-eL-Hgc.title" = "Homepage";
+
+/* Class = "WKInterfaceLabel"; text = "76 F"; ObjectID = "CXz-vx-vRO"; */
+"CXz-vx-vRO.text" = "76 F";
+
+/* Class = "WKInterfaceController"; title = "Driver Climate"; ObjectID = "DNk-lU-lMC"; */
+"DNk-lU-lMC.title" = "Driver Climate";
+
+/* Class = "WKInterfaceButton"; title = "Set Alert Help"; ObjectID = "DYJ-Gr-jfp"; */
+"DYJ-Gr-jfp.title" = "Set Alert Help";
+
+/* Class = "WKInterfaceButton"; title = "Start"; ObjectID = "F3W-eB-h2h"; */
+"F3W-eB-h2h.title" = "Start";
+
+/* Class = "WKInterfaceButton"; title = "Set Alert Me"; ObjectID = "HIi-XU-w73"; */
+"HIi-XU-w73.title" = "Set Alert Me";
+
+/* Class = "WKInterfaceLabel"; text = "Alert Label"; ObjectID = "IdU-wH-bcW"; */
+"IdU-wH-bcW.text" = "Alert Label";
+
+/* Class = "WKInterfaceButton"; title = "My Radio"; ObjectID = "Jp5-JS-3OB"; */
+"Jp5-JS-3OB.title" = "My Radio";
+
+/* Class = "WKInterfaceLabel"; text = "Your car is secure!"; ObjectID = "LCj-Ae-wpK"; */
+"LCj-Ae-wpK.text" = "Your car is secure!";
+
+/* Class = "WKInterfaceButton"; title = "Start"; ObjectID = "NBl-h6-oDR"; */
+"NBl-h6-oDR.title" = "Start";
+
+/* Class = "WKInterfaceButton"; title = "Set"; ObjectID = "Rkf-SL-UYq"; */
+"Rkf-SL-UYq.title" = "Set";
+
+/* Class = "WKInterfaceButton"; title = "Me"; ObjectID = "Vai-3j-O3i"; */
+"Vai-3j-O3i.title" = "Me";
+
+/* Class = "WKInterfaceButton"; title = "Set"; ObjectID = "VpK-zm-KO2"; */
+"VpK-zm-KO2.title" = "Set";
+
+/* Class = "WKInterfaceLabel"; text = "Driver"; ObjectID = "Y11-b9-MtS"; */
+"Y11-b9-MtS.text" = "Driver";
+
+/* Class = "WKInterfaceLabel"; text = "10:24 ETA"; ObjectID = "acA-qJ-Pdk"; */
+"acA-qJ-Pdk.text" = "10:24 ETA";
+
+/* Class = "WKInterfaceButton"; title = "Set"; ObjectID = "azW-tw-t9k"; */
+"azW-tw-t9k.title" = "Set";
+
+/* Class = "WKInterfaceController"; title = "Passenger Climate"; ObjectID = "bwn-RQ-7Du"; */
+"bwn-RQ-7Du.title" = "Passenger Climate";
+
+/* Class = "WKInterfaceLabel"; text = "76 F"; ObjectID = "cYE-QS-Nsr"; */
+"cYE-QS-Nsr.text" = "76 F";
+
+/* Class = "WKInterfaceButton"; title = "Add Driver"; ObjectID = "fjS-X5-3Cc"; */
+"fjS-X5-3Cc.title" = "Add Driver";
+
+/* Class = "WKInterfaceButton"; title = "Secure"; ObjectID = "mAS-FC-PMn"; */
+"mAS-FC-PMn.title" = "Secure";
+
+/* Class = "WKInterfaceLabel"; text = "  Locate"; ObjectID = "mzs-Yp-tQU"; */
+"mzs-Yp-tQU.text" = "  Locate";
+
+/* Class = "WKInterfaceButton"; title = "Mom"; ObjectID = "q8G-0p-j5r"; */
+"q8G-0p-j5r.title" = "Mom";
+
+/* Class = "WKInterfaceController"; title = "Map Location"; ObjectID = "ryv-Yk-sKl"; */
+"ryv-Yk-sKl.title" = "Map Location";
+
+/* Class = "WKInterfaceLabel"; text = "Front-Seat Passenger"; ObjectID = "w0a-GA-voA"; */
+"w0a-GA-voA.text" = "Front-Seat Passenger";
+
+/* Class = "WKInterfaceButton"; title = "Clear"; ObjectID = "zTQ-dO-wd1"; */
+"zTQ-dO-wd1.title" = "Clear";
