@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KDw-AT-JWG">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -35,7 +35,7 @@
                 <controller title="Driver Climate" id="DNk-lU-lMC">
                     <items>
                         <label alignment="left" text="Driver" id="Y11-b9-MtS">
-                            <fontDescription key="font" type="system" pointSize="33"/>
+                            <fontDescription key="font" type="system" pointSize="28"/>
                         </label>
                         <group width="134" height="62" alignment="left" id="40l-ij-Ma9">
                             <items>
@@ -57,20 +57,31 @@
             </objects>
             <point key="canvasLocation" x="914" y="-336"/>
         </scene>
-        <!--Interface Controller-->
+        <!--FM-->
         <scene sceneID="Xvh-Nr-9MO">
             <objects>
-                <controller id="KDw-AT-JWG">
+                <controller title="FM" id="KDw-AT-JWG" customClass="InterfaceController" customModule="testWatchApp_WatchKit_Extension">
                     <items>
-                        <picker height="63" alignment="left" id="FXy-g7-VGl"/>
-                        <picker height="53" alignment="left" id="w3o-X2-8Wy"/>
-                        <button width="1" alignment="left" title="Set" id="VpK-zm-KO2">
-                            <color key="backgroundColor" red="0.0078431372550000003" green="0.46274509800000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </button>
+                        <label width="136" height="105" alignment="left" text="102.7" textAlignment="center" numberOfLines="2" id="7f4-g8-veu">
+                            <fontDescription key="font" type="system" pointSize="50"/>
+                        </label>
+                        <group width="1" alignment="left" id="Ra5-7c-kCt">
+                            <items>
+                                <button width="136" alignment="left" title="Set" id="Vmo-Cy-wAt">
+                                    <color key="backgroundColor" red="0.0078431372550000003" green="0.46274509800000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="editStation" destination="KDw-AT-JWG" id="rxQ-AG-ZNC"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="station" destination="7f4-g8-veu" id="EAk-mc-z2C"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1259" y="-359"/>
+            <point key="canvasLocation" x="1259" y="-365"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="kP4-qw-cIb">
@@ -107,7 +118,7 @@
             <objects>
                 <controller title="Passenger Climate" id="bwn-RQ-7Du">
                     <items>
-                        <label alignment="left" text="Front-Seat Passenger" id="w0a-GA-voA">
+                        <label width="136" alignment="left" text="Front-Seat Passenger" id="w0a-GA-voA">
                             <fontDescription key="font" type="system" pointSize="24"/>
                         </label>
                         <group width="134" height="62" alignment="left" id="EG3-hg-uBC">
@@ -133,11 +144,11 @@
                 <controller title="Map Location" id="ryv-Yk-sKl">
                     <items>
                         <label width="136" alignment="left" text="10:24 ETA" textAlignment="center" id="acA-qJ-Pdk"/>
-                        <map height="100" alignment="left" id="wG7-ZL-ccb"/>
+                        <map width="123" height="83" alignment="center" id="wG7-ZL-ccb"/>
                         <group width="1" alignment="left" id="J48-eF-zqk">
                             <items>
-                                <button width="0.5" alignment="left" title="Clear" id="2CC-Bj-9Ci"/>
-                                <button width="0.5" alignment="left" title="Start" id="F3W-eB-h2h"/>
+                                <button width="66" height="37" alignment="left" title="Clear" id="2CC-Bj-9Ci"/>
+                                <button width="66" height="37" alignment="left" title="Start" id="F3W-eB-h2h"/>
                             </items>
                         </group>
                     </items>
@@ -146,7 +157,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="597" y="-329"/>
+            <point key="canvasLocation" x="597" y="-336"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="3fX-aM-dd4">

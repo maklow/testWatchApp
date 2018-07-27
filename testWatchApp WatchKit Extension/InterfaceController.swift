@@ -12,6 +12,23 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+
+    @IBOutlet var station: WKInterfaceLabel!
+    
+    
+    @IBAction func editStation() {
+        let suggestions = ["102.7", "103.5", "97.1"]
+        presentTextInputController(withSuggestions: suggestions, allowedInputMode: .plain) { (results) in
+            guard let responses = results else {
+                self.station.setText("Cancelled")
+                return
+            }
+            let text = responses[0] as! String
+            self.station.setText(text)
+        }
+    }
+    
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
