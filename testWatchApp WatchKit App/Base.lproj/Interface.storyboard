@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KDw-AT-JWG">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DNk-lU-lMC">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,18 +32,26 @@
         <!--Driver Climate-->
         <scene sceneID="ZfN-Ah-sSo">
             <objects>
-                <controller title="Driver Climate" id="DNk-lU-lMC">
+                <controller title="Driver Climate" id="DNk-lU-lMC" customClass="InterfaceController" customModule="testWatchApp_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Driver" id="Y11-b9-MtS">
                             <fontDescription key="font" type="system" pointSize="28"/>
                         </label>
                         <group width="134" height="62" alignment="left" id="40l-ij-Ma9">
                             <items>
-                                <button width="32" height="34" alignment="left" verticalAlignment="center" backgroundImage="minus" id="lzv-ra-pme"/>
-                                <label alignment="left" text="76º" textAlignment="center" id="CXz-vx-vRO">
-                                    <fontDescription key="font" type="system" pointSize="48"/>
+                                <button width="32" height="34" alignment="left" verticalAlignment="center" backgroundImage="minus" id="lzv-ra-pme">
+                                    <connections>
+                                        <action selector="minusDriver" destination="DNk-lU-lMC" id="gmC-Pi-72w"/>
+                                    </connections>
+                                </button>
+                                <label width="65" height="62" alignment="left" text="76º" textAlignment="center" numberOfLines="3" id="CXz-vx-vRO">
+                                    <fontDescription key="font" type="system" pointSize="41"/>
                                 </label>
-                                <button width="33" height="34" alignment="left" verticalAlignment="center" backgroundImage="plus" id="afK-mb-y2s"/>
+                                <button width="33" height="34" alignment="left" verticalAlignment="center" backgroundImage="plus" id="afK-mb-y2s">
+                                    <connections>
+                                        <action selector="plusDriver" destination="DNk-lU-lMC" id="xjt-Ar-HdA"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                         <button width="1" alignment="left" title="Set" id="Rkf-SL-UYq">
@@ -51,6 +59,7 @@
                         </button>
                     </items>
                     <connections>
+                        <outlet property="climateDriverLabel" destination="CXz-vx-vRO" id="0qS-kh-Zgf"/>
                         <segue destination="bwn-RQ-7Du" kind="relationship" relationship="nextPage" id="qSb-AR-u1K"/>
                     </connections>
                 </controller>
@@ -62,8 +71,11 @@
             <objects>
                 <controller title="FM" id="KDw-AT-JWG" customClass="InterfaceController" customModule="testWatchApp_WatchKit_Extension">
                     <items>
-                        <label width="136" height="105" alignment="left" text="102.7" textAlignment="center" numberOfLines="2" id="7f4-g8-veu">
+                        <label width="136" height="66" alignment="left" text="102.7" textAlignment="center" numberOfLines="2" id="7f4-g8-veu">
                             <fontDescription key="font" type="system" pointSize="50"/>
+                        </label>
+                        <label width="136" alignment="left" text="FM" textAlignment="center" id="gy1-IO-Vnb">
+                            <fontDescription key="font" type="system" pointSize="31"/>
                         </label>
                         <group width="1" alignment="left" id="Ra5-7c-kCt">
                             <items>
@@ -89,9 +101,9 @@
                 <controller id="Mrx-tP-Oa8">
                     <items>
                         <label width="136" height="20" alignment="left" text="Your car is secure!" textAlignment="center" id="LCj-Ae-wpK"/>
-                        <button width="1" alignment="left" title="Set Alert Me" id="HIi-XU-w73"/>
-                        <button width="1" alignment="left" title="Set Alert Help" id="DYJ-Gr-jfp"/>
-                        <button width="1" alignment="left" title="Add Driver" id="fjS-X5-3Cc"/>
+                        <button width="1" alignment="left" backgroundImage="setAlertMe" id="HIi-XU-w73"/>
+                        <button width="1" alignment="left" backgroundImage="setAlertHelp" id="DYJ-Gr-jfp"/>
+                        <button width="1" alignment="left" backgroundImage="addDriver" id="fjS-X5-3Cc"/>
                     </items>
                     <connections>
                         <segue destination="5nf-5S-CF8" kind="relationship" relationship="nextPage" id="2kX-4C-SJs"/>
@@ -116,24 +128,35 @@
         <!--Passenger Climate-->
         <scene sceneID="xIB-5y-xS4">
             <objects>
-                <controller title="Passenger Climate" id="bwn-RQ-7Du">
+                <controller title="Passenger Climate" id="bwn-RQ-7Du" customClass="InterfaceController" customModule="testWatchApp_WatchKit_Extension">
                     <items>
                         <label width="136" alignment="left" text="Front-Seat Passenger" id="w0a-GA-voA">
                             <fontDescription key="font" type="system" pointSize="24"/>
                         </label>
                         <group width="134" height="62" alignment="left" id="EG3-hg-uBC">
                             <items>
-                                <button width="32" height="34" alignment="left" verticalAlignment="center" backgroundImage="minus" id="6OU-ce-DXd"/>
-                                <label alignment="left" text="76º" textAlignment="center" id="LuQ-wr-AB9">
-                                    <fontDescription key="font" type="system" pointSize="48"/>
+                                <button width="32" height="34" alignment="left" verticalAlignment="center" backgroundImage="minus" id="6OU-ce-DXd">
+                                    <connections>
+                                        <action selector="minusPassenger" destination="bwn-RQ-7Du" id="PeW-7P-GJw"/>
+                                    </connections>
+                                </button>
+                                <label width="65" height="56" alignment="left" text="76º" textAlignment="center" id="LuQ-wr-AB9">
+                                    <fontDescription key="font" type="system" pointSize="41"/>
                                 </label>
-                                <button width="33" height="34" alignment="left" verticalAlignment="center" backgroundImage="plus" id="MTB-BZ-vn4"/>
+                                <button width="33" height="34" alignment="left" verticalAlignment="center" backgroundImage="plus" id="MTB-BZ-vn4">
+                                    <connections>
+                                        <action selector="plusPassenger" destination="bwn-RQ-7Du" id="v0c-ij-BeJ"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                         <button width="1" alignment="left" title="Set" id="azW-tw-t9k">
                             <color key="backgroundColor" red="0.0078431372550000003" green="0.46274509800000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="climatePassengerLabel" destination="LuQ-wr-AB9" id="GIJ-4Q-Cv8"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="914" y="-10"/>

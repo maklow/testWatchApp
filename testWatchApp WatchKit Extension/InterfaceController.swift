@@ -12,15 +12,41 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
-
+    var climateDriver: Int = 76
+    var climatePassenger: Int = 76
+    
+    @IBOutlet var climatePassengerLabel: WKInterfaceLabel!
+    @IBOutlet var climateDriverLabel: WKInterfaceLabel!
+    
     @IBOutlet var station: WKInterfaceLabel!
+    
+    @IBAction func minusDriver() {
+        climateDriver = climateDriver - 1
+        climateDriverLabel.setText("\(climateDriver)" + "º")
+    }
+    @IBAction func plusDriver() {
+        climateDriver = climateDriver + 1
+        climateDriverLabel.setText("\(climateDriver)" + "º")
+    }
+    
+    
+    @IBAction func minusPassenger() {
+        climatePassenger = climatePassenger - 1
+        climatePassengerLabel.setText("\(climatePassenger)" + "º")
+    }
+    
+    
+    @IBAction func plusPassenger() {
+        climatePassenger = climatePassenger + 1
+        climatePassengerLabel.setText("\(climatePassenger)" + "º")
+    }
     
     
     @IBAction func editStation() {
         let suggestions = ["102.7", "103.5", "97.1"]
         presentTextInputController(withSuggestions: suggestions, allowedInputMode: .plain) { (results) in
             guard let responses = results else {
-                self.station.setText("Cancelled")
+                self.station.setText("N/A")
                 return
             }
             let text = responses[0] as! String
